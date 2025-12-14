@@ -21,8 +21,6 @@ jobs:
             run: touch github-action.txt
           - name: print hello world
             run: echo Hello World
-          - name: display readme file
-            run: cat README.md
     build_job:
         runs-on: windows-latest
         steps:
