@@ -28,7 +28,9 @@ jobs:
             - name: display hello
               run: echo hello
     deploy_job:
-        needs: setup_job
+        needs:
+            - setup_job
+            - deploy_job
         runs-on: macos-latest
         steps:
          - run: echo Hello Mac
