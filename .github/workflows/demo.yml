@@ -22,6 +22,7 @@ jobs:
           - name: print hello world
             run: echo Hello World
     build_job:
+        needs: setup_job
         runs-on: windows-latest
         steps:
             - name: display hello
