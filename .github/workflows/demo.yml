@@ -31,4 +31,4 @@ jobs:
     deploy_job:
         runs-on: macos-latest
         steps:
-             - run: echo Hello Mac
+         - run: echo Hello Mac
