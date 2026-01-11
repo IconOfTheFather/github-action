@@ -77,3 +77,5 @@ jobs:
           cluster: nginx-fargate-cluster
           service: nginx-fargate-service
           wait-for-service-stability: true
+      - name: Debug AWS Identity
+        run: aws sts get-caller-identity
