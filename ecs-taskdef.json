@@ -64,7 +64,7 @@
   ],
   "revision": 5,
   "status": "ACTIVE",
-  "taskDefinitionArn": "arn:aws:ecs:us-east-1:676085824947:task-definition/nginx-fargate-task:1",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:676085824947:task-definition/nginx-fargate-task:6",
   "taskRoleArn": "arn:aws:iam::676085824947:role/nginx-fargate-ecs-task-role",
   "volumes": [],
   "tags": [
