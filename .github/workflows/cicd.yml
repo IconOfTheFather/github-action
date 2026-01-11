@@ -53,6 +53,11 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
+          aws-region: ${{ env.AWS_REGION }}
+
       - name: Render ecs task definition with new image
         id: taskdef
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
