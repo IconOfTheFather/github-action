@@ -60,7 +60,7 @@ jobs:
         with:
           role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: ${{ env.AWS_REGION }}
-          role-session-name: GitHubActions-${{ github.run_id }}  # ← ADD
+          role-session-name: GitHubActions-${{github.run_id }}  # ← ADD
       - name: Debug AWS Identity
         run: aws sts get-caller-identity
 
