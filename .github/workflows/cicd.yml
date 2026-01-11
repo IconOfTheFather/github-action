@@ -70,7 +70,7 @@ jobs:
         with:
           task-definition: ecs-taskdef.json
           container-name: nginx
-          image: /${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG }}
+          image: ${{ env.IMAGE_NAME}}:${{ env.IMAGE_TAG }}
       
       - name: Deploy to ecs service
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
