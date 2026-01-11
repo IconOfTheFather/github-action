@@ -75,7 +75,7 @@ jobs:
       - name: Deploy to ecs service
         uses: aws-actions/amazon-ecs-deploy-task-definition@v1
         with:
-          task-definition: ecs-task-def.json
+          task-definition: ecs-taskdef.json
           cluster: nginx-fargate-cluster
           service: nginx-fargate-service
           wait-for-service-stability: true
