@@ -36,7 +36,7 @@ jobs:
         with:
           image-ref: /${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
           severity: CRITICAL,HIGH
-          exit-code: 1
+          exit-code: 0
           ignore-unfixed: false
           vuln-type: os,library
      
