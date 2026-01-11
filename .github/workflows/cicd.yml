@@ -55,6 +55,8 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v4
+      - name: Debug AWS Identity
+        run: aws sts get-caller-identity
       
       - uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -77,5 +79,4 @@ jobs:
           cluster: nginx-fargate-cluster
           service: nginx-fargate-service
           wait-for-service-stability: true
-      - name: Debug AWS Identity
-        run: aws sts get-caller-identity
+      
